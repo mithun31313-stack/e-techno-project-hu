@@ -1,0 +1,196 @@
+/* ===========================
+   TECHNO PROJECT HUB
+   Main Stylesheet
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:30px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* BUTTONS */
+
+.btn,
+.btn2{
+    display:inline-block;
+    margin:30px 10px 0;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn2{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.btn2:hover{
+    background:#38bdf8;
+    color:#111827;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* PROJECTS */
+
+.projects{
+    padding:80px 8%;
+}
+
+.projects h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:20px;
+}
+
+.card p{
+    padding:0 20px 20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:10px 0;
+}
